@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WasteOptionActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dispcard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="@dimen/_12mdp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_plastic"
+                android:id="@+id/wasteimg"/>
+
+            <TextView
+                android:id="@+id/wastetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="84dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="Plastics"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20mdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/wasteimg"
+                tools:layout_editor_absoluteX="0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_12mdp"
+        app:cardElevation="@dimen/_2mdp"
+        android:layout_marginVertical="@dimen/_8mdp"
+        android:layout_marginHorizontal="@dimen/_5mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dispcard">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/_7mdp"
+                android:layout_marginStart="@dimen/_9mdp"
+                android:text="About"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/_21mdp"
+                android:id="@+id/charthead"/>
+            <View
+                android:id="@+id/v2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/charthead"
+                android:layout_width="@dimen/_55mdp"
+                android:layout_marginStart="@dimen/_13mdp"
+                android:layout_height="@dimen/_2mdp"
+                android:background="#706E6E"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textSize="@dimen/_12mdp"
+                android:layout_marginVertical="@dimen/_7mdp"
+                android:layout_marginHorizontal="@dimen/_10mdp"
+                android:id="@+id/abouttxt"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
